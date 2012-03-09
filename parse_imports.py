@@ -100,14 +100,10 @@ def parse_import(s):
                     print 'failed to import %s' % base
                     return 
 
-
-
 def parse_file(file_name):
     with open(file_name) as fin:
         for line in fin:
             parse_import(line.strip())
-
-
 
 def print_dict(mapping):
     def expand_entry(mapping, key):
@@ -128,8 +124,6 @@ def test_function(file_name, sys_path):
     print global_completer
 
 if __name__ == '__main__':
-
-
 
     print len(sys.argv)
     if len(sys.argv) < 3:
